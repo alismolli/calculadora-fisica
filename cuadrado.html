@@ -18,18 +18,27 @@
         </header>
         <main>
           <h1> Calculadora de Física</h1>
-          <p> Elija la figura geométrica que desea calcular:</p>
+          <p> Cuadrado</p>
+          <section class="operation-container">
+            <label for="lado-cuadrado">Lado del cuadrado</label>
+            <input type="text" id="lado-cuadrado" placeholder="Ingrese una cantidad en centimetros">
+            <div class="operation-container__resultado">
+              <span>Resultado</span>
+              <p id="resultado"></p>
+            </div>
+
+            <div class image-container>
+              <img src="https://source.unsplash.com/random/" alt="">
+            </div>
           </section>
         </main>
           <section class="button-container">
-            <a href="./cuadrado.html">
-              <button class="button-container__payment">Cuadrado</button>
-            </a>
-            <a href="./triangulo.html">
-              <button class="button-container__payment">Triangulo</button>
+            <button class="button-container__payment" type="button" onclick="calcularAreaCuadrado()" >Calcular el área</button>
+            <button class="button-container__payment">Calcular el perimetro</button>
+            <a href="/">
+              <button class="button-container__cancel">Cancelar</button>
             </a>
           </section>
-      
       </article>
     <script src="./index.js"></script>
 </body>
